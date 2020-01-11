@@ -60,5 +60,4 @@ class UsersController < ApplicationController
     # end
     erb :'/users/show'
   end
-  
 end
