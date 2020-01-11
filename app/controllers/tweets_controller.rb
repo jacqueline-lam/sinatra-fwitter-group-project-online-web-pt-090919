@@ -21,8 +21,8 @@ class TweetsController < ApplicationController
     @tweet.user = current_user
     
     if @tweet.save
-      current_user.tweets << @tweet
-      current_user.save
+      # current_user.tweets << @tweet
+      # current_user.save
       redirect "tweets/#{@tweet.id}"
     else
       redirect 'tweets/new'
